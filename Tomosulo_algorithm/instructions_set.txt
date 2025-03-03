@@ -1,0 +1,22 @@
+//pdf code 
+
+FLD:R6,34
+FLD:R2,45
+FMUL.D:R0,R2,R4
+FSUB.D:R8,R6,R2
+FDIV.D:R10,R0,R6
+FADD.D:R6,R8,R2
+
+// fibonnaci code
+
+FLD:R1,0
+FLD:R2,0
+FLD:R3,0
+FLD:R4,1
+LOOP:3
+FADD.D:R5,R4,R3
+FADD.D:R3,R4,R1
+FADD.D:R4,R5,R2
+LOOPEND
+
+// ppt code
